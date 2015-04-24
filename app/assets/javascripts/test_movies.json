@@ -1,0 +1,120 @@
+{
+	"movies":[
+		{
+		"title":"Guardians of the galaxy",
+		"synopsis":"Ager stealing a mysterious orb in the far reaches of outer space, Peter Quill from Earth, is now the main target of a manhunt led by the villain known as Ronan the Acusser. To help fight Ronan and his team and save the galaxy from his power, Quill creates a team of space heroes known as 'Guardians of the Galaxy' to save the world.",
+		"cast":"Chriss Pratt, Zoe Saldana, Dave Bautista, Vin Diesel, Bradley Cooper and others...",
+		"trailer": "https://www.youtube.com/watch?v=d96cjJhvlMA",
+		"director":"James Gunn",
+		"writters":"James Gunn, Nicole Pertman, Dan Abnett, Andy Lanning",
+		"released":"FEB 20, 2014",
+		"runtime":"139",
+		"favorites":"3,542",
+		"score":"4",
+		"cover-image":"assets/cover_images/guardians_cover.jpg",
+		"banner-image":"assets/banners/guardians_banner.jpg",
+		"thumb-image": "assets/thumbs/guardians_thumb.jpg",
+		"similar-movies":[
+		{
+			"title":"Captain America: The Winter Soldier",
+			"cover-image":"assets/cover_images/captain_america_winter.jpg"
+		},
+		{
+			"title":"Thor: The Dark World",
+			"cover-image":"assets/cover_images/thor_dark_world.jpg"
+		},
+		{
+			"title":"The Avengers",
+			"cover-image":"assets/cover_images/avengers.jpg"
+		}
+		]
+	},
+	{
+		"title":"Captain America: The Winter Soldier",
+		"synopsis":"As Steve Rogers struggles to embrace his role in the modern world, he teams up with another super soldier, the black widow, to battle a new threat from old history: an assassin known as the Winter Soldier.",
+		"cast":"Chris Evans, Samuel L. Jackson, Scarlett Johansson and others...",
+		"trailer": "https://www.youtube.com/watch?v=tbayiPxkUMM",
+		"director":"Anthony Russo, Joe Russo",
+		"writters":"Christopher Markus, Stephen McFeely ",
+		"released":"APR 4, 2014",
+		"runtime":"136",
+		"favorites":"3,234",
+		"score":"4",
+		"cover-image":"assets/cover_images/captain_america_winter.jpg",
+		"banner-image":"assets/banners/captain_america_winter.jpg",
+		"thumb-image": "assets/thumbs/captain_america_winter.jpg",
+		"similar-movies":[
+		{
+			"title":"Guardians of the Galaxy",
+			"cover-image":"assets/cover_images/guardians_cover.jpg"
+		},
+		{
+			"title":"Thor: The Dark World",
+			"cover-image":"assets/cover_images/thor_dark_world.jpg"
+		},
+		{
+			"title":"The Avengers",
+			"cover-image":"assets/cover_images/avengers.jpg"
+		}
+		]
+	},
+	{
+		"title":"Thor: The Dark World",
+		"synopsis":"When Dr Jane Foster gets cursed with a powerful object, Thor must protect it before an army and its ruthless leader try to get their hands on it to take over the remains of Earth.",
+		"cast":"Chris Hemsworth, Natalie Portman, Tom Hiddleston and others...",
+		"trailer": "https://www.youtube.com/watch?v=jHFhZLJajlc",
+		"director":"Alan Taylor",
+		"writters":" Christopher Yost and Christopher Markus",
+		"released":"NOV 8, 2013",
+		"runtime":"112",
+		"favorites":"3,542",
+		"score":"4",
+		"cover-image":"assets/cover_images/thor_dark_world.jpg",
+		"banner-image":"assets/banners/thor_dark_world.jpg",
+		"thumb-image": "assets/thumbs/thor_dark_world.jpg",
+		"similar-movies":[
+		{
+			"title":"Guardians of the Galaxy",
+			"cover-image":"assets/cover_images/guardians_cover.jpg"
+		},
+		{
+			"title":"Captain America: The Winter Soldier",
+			"cover-image":"assets/cover_images/captain_america_winter.jpg"
+		},
+		{
+			"title":"The Avengers",
+			"cover-image":"assets/cover_images/avengers.jpg"
+		}
+		]
+	},
+	{
+		"title":"The Avengers",
+		"synopsis":"Earth's mightiest heroes must come together and learn to fight as a team if they are to stop the mischievous Loki and his alien army from enslaving humanity",
+		"cast":"Robert Downey Jr., Chris Evans, Scarlett Johansson and others...",
+		"trailer": "https://www.youtube.com/watch?v=eOrNdBpGMv8",
+		"director":"Joss Whedon",
+		"writters":"Joss Whedon, Zak Penn ",
+		"released":"MAY 4, 2012",
+		"runtime":"143",
+		"favorites":"3,248",
+		"score":"4",
+		"cover-image":"assets/cover_images/avengers.jpg",
+		"banner-image":"assets/banners/avengers.png",
+		"thumb-image": "assets/thumbs/avengers.jpg",
+		"similar-movies":[
+		{
+			"title":"Guardians of the Galaxy",
+			"cover-image":"assets/cover_images/guardians_cover.jpg"
+		},
+		{
+			"title":"Thor: The Dark World",
+			"cover-image":"assets/cover_images/thor_dark_world.jpg"
+		},
+		{
+			"title":"Captain America: The Winter Soldier",
+			"cover-image":"assets/cover_images/captain_america_winter.jpg"
+		}
+		]
+	}
+	]
+}

@@ -1,0 +1,90 @@
+@import "media-queries"
+@include max-screen(320px)
+@include screen(320px,560px)
+@include screen(520px,768px)
+@include screen(768px,980px)
+@include screen(980px,1024px)
+@include screen(1024px,1285px)
+@include min-screen(1285px)
+  body
+    width: 1285px
+    margin: auto
+    .master-panel
+      .master-overlay
+        width: 100%
+        height: 100%
+      #trailer-pop-up
+        top: 205px
+        .pop-up-title
+          .pop-movie-title
+          .close-pop-up
+        #video-container
+        .similar-movies-container
+          .similar-pop-title 
+          #similar-movies-list
+      #banner-container
+        .banner-image
+        .banner-title
+          top: 80px
+          right: 165px
+          font-size: 54px
+          width: 350px
+        .banner-movie-info
+          .movie-info-field
+            .movie-info-title
+            .movie-info-desc
+            #movie-info-released
+            #movie-info-runtime
+            #movie-info-score
+            #movie-info-likes
+      #movies-container
+        #headline
+          .title
+          #search-box
+            .search-input
+            .search-button
+        #movies-box
+          #movies-list
+            .single-movie-box
+              width: 205px
+              height: 205px
+              .single-movie-overlay
+                width: 205px
+                height: 205px
+                z-index: 10
+              .thumb-movie-cont
+                width: 205px
+                height: 205px
+                .thumb-movie-image
+                  width: 205px
+                  height: 205px
+                  float: left
+                .movie-likes
+                .movie-download
+                .movie-title
+              .movie-info-box.clicked-info-box
+                display: block
+              .movie-info-box
+                display: none
+                position: absolute
+                width: 100%
+                background: #31343C
+                .cover-image
+                  img
+                .movie-main-info
+                  .movie-info-title
+                  .movie-info-synopsis
+                  .movie-info-watch-button
+                  .movie-info-add-fav
+                .movie-secondary-info
+                  .movie-info-director-box
+                    .movie-director-title
+                    .movie-info-dir
+                  .movie-info-writters-box
+                    .movie-writters-title
+                    .movie-info-write
+                  .movie-info-cast-box
+                    .movie-cast-title
+                    .movie-info-cast
+              .similar-movies-box
+                display: none

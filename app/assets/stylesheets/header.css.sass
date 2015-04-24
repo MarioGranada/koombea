@@ -29,12 +29,32 @@ body
         color: #FFF
         background: red
         border-radius: 10px
-        float: left
+        position: absolute
         padding: 10px
         max-width: 150px
         display: none
-      .social-top-banner
-        display: none
+        z-index: 10
+      #social-top-banner
+        background: #FFF
+        .share-exp
+          font-size: 14px
+          color: #3f434d
+          width: 100%
+          text-align: center
+          margin-bottom: 10px
+        .social-icon
+          width: 25px
+          height: 25px
+          float: left
+          margin-right: 25px
+          a
+            width: 25px
+            height: 25px
+            float: left
+            img
+              width: 25px
+              height: 25px
+              float: left
     .user-info
       float: right
       margin-right: 45px
@@ -43,14 +63,38 @@ body
         .user-image
           float: left
           margin: -7px 10px 0px 0px
+          cursor: pointer
           img
             float: left
         .username
           float: left
           margin-right: 10px
+          cursor: pointer
         .user-edit
           float: left
+          cursor: pointer
           img
             float: left
       .user-options
         display: none
+        position: absolute
+        right: 0
+        background: #FFF
+        width: 200px
+        padding: 15px
+        z-index: 10
+        top: 32px
+        border: 1px solid #A5A7AD
+        .user-opt
+          float: left
+          width: 100%
+          font-size: 14px
+          color: #3f434d
+          a
+            text-transform: uppercase
+            text-align: left
+            text-decoration: none
+            margin-bottom: 5px
+            border-bottom: 1px solid #A5A7AD
+            float: left
+            color: #3f434d

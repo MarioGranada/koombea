@@ -18,6 +18,7 @@ end
 gem "haml"
 gem 'capistrano'
 gem 'rvm-capistrano'
+gem 'sass-mediaqueries-rails'
 
 group :development do
    gem 'pry'

@@ -1,1 +1,33 @@
-%h1 This is a test for home
+.master-overlay
+#trailer-pop-up
+  .pop-up-title
+    .pop-movie-title
+    .close-pop-up X
+  #video-container
+    %iframe{:width=>"945",:height=>"365",:src=>""}
+  .similar-movies-container
+    .similar-pop-title Similar Movies
+    #similar-movies-list
+#banner-container
+  .banner-image
+  .banner-title
+  .banner-movie-info
+    .movie-info-field#movie-banner-released
+      .movie-info-title Released
+      #movie-info-released.movie-info-desc
+    .movie-info-field
+      .movie-info-title Runtime
+      #movie-info-runtime.movie-info-desc
+    .movie-info-field
+      .movie-info-title Score
+      #movie-info-score.movie-info-desc
+    .movie-info-field#movie-info-likes-field
+      .movie-info-title.fav_icon=image_tag "icons_logos/fav_white_icon.png"
+      #movie-info-likes.movie-info-desc
+#movies-container
+  #headline
+    .title New Releases
+    #search-box
+      .search-input=text_field_tag :search, "",:placeholder=>"Search..."
+      .search-button=image_tag "icons_logos/search_icon.jpg"
+  #movies-box
