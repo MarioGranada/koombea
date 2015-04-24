@@ -49,7 +49,9 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.9.1.1)
+    daemons (1.2.2)
     erubis (2.7.0)
+    eventmachine (1.0.7)
     execjs (2.5.2)
     ffi (1.9.8)
     formatador (0.2.5)
@@ -104,6 +106,7 @@ GEM
     notiffany (0.0.6)
       nenv (~> 0.1)
       shellany (~> 0.0)
+    pg (0.18.1)
     polyglot (0.3.5)
     pry (0.10.1)
       coderay (~> 1.1.0)
@@ -164,6 +167,10 @@ GEM
     therubyracer (0.12.2)
       libv8 (~> 3.16.14.0)
       ref
+    thin (1.6.3)
+      daemons (~> 1.0, >= 1.0.9)
+      eventmachine (~> 1.0)
+      rack (~> 1.0)
     thor (0.19.1)
     tilt (1.4.1)
     timers (4.0.1)
@@ -191,6 +198,7 @@ DEPENDENCIES
   haml
   handlebars_assets
   libv8 (= 3.16.14.3)
+  pg
   pry
   pry-doc
   pry-rails
@@ -202,4 +210,5 @@ DEPENDENCIES
   spring
   sqlite3
   therubyracer
+  thin
   uglifier
