@@ -134,6 +134,11 @@ GEM
       activesupport (= 3.2.17)
       bundler (~> 1.0)
       railties (= 3.2.17)
+    rails_12factor (0.0.3)
+      rails_serve_static_assets
+      rails_stdout_logging
+    rails_serve_static_assets (0.0.4)
+    rails_stdout_logging (0.0.3)
     railties (3.2.17)
       actionpack (= 3.2.17)
       activesupport (= 3.2.17)
@@ -204,6 +209,7 @@ DEPENDENCIES
   pry-rails
   rack-reverse-proxy
   rails (= 3.2.17)
+  rails_12factor
   rvm-capistrano
   sass
   sass-rails
