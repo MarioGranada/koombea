@@ -32,14 +32,14 @@ $(window).load(function(){
 			$(this).children(".thumb-movie-cont").children(".arrow-cont").css("display","block");
 			displayMovieInfo(initialTop);
 		 });
-		 $(".similar-movie-box").click(function(){
+		 // $(".similar-movie-box").click(function(){
 		 	// currentId=$(this).attr("id");
 		 	// currentId=currentId.replace("similar","list");
 		 	// $(currentId).trigger("click");
-		 	closePopup();
-		 	$("html, body").animate($("#movies-list").css("top"), '500', 'swing');
+		 	// closePopup();
+		 	// $("html, body").animate($("#movies-list").css("top"), '500', 'swing');
 
-		 })
+		 // })
 		 resizeVideoIframe();
         },
         error: function(data){
