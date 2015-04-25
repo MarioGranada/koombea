@@ -14,18 +14,53 @@ body
       position: fixed
       z-index: 20
       display: none
-      .pop-up-title
-        .pop-movie-title
-        .close-pop-up
-      #video-container
-      .similar-movies-container
-        .similar-pop-title 
-        #similar-movies-list
+      width: 100%
+      left: 0
+      #pop-up-box
+        background: #FFF
+        padding: 25px
+        color: #3f434d
+        margin: auto
+        .pop-up-title
+          .pop-movie-title
+            float: left
+            text-transform: capitalize
+          .close-pop-up
+            cursor: pointer
+            float: right
+            margin-right: -25px
+            margin-top: -25px
+        #video-container
+        .similar-movies-container
+          width: 100%
+          .similar-pop-title 
+            margin: 15px 0px
+            float: left
+            clear: both
+          #similar-movies-list
+            width: auto
+            clear: left
+            margin: 0px 55px
+            min-height: 185px
+            .similar-movie-box
+              float: left
+              margin-right: 25px
+              margin-bottom: 25px
+              cursor: pointer
+              .similar-movie-cover
+                float: left
+                img
+                  float: left
+              .similar-movie-title
+                text-align: center
+                width: 100%
+                float: left
     #banner-container
       position: relative
       float: left
       .banner-image
         position: relative
+        float: left
         img
           float: left
       .banner-title
@@ -62,6 +97,7 @@ body
           float: right
           margin-right: 45px
     #movies-container
+      float: left
       #headline
         width: 100%
         float: left
@@ -129,6 +165,14 @@ body
                 text-transform: capitalize
                 text-align: left
                 float: left
+              .arrow-cont
+                text-align: center
+                position: absolute
+                display: none
+                img
+                  margin: auto
+                  width: 20px
+                  height: 20px
             .movie-info-box.clicked-info-box
               display: block
             .movie-info-box
@@ -150,8 +194,79 @@ body
                 .movie-info-cast-box
                   .movie-cast-title
                   .movie-info-cast
+              .movie-additional-info
+                display: none
             .similar-movies-box
               display: none
+    #movie-info-overlay
+      background: #2b2e35
+      color: #FFF
+      position: absolute
+      display: none
+      z-index: 10
+      #cover-image
+        border: 2px solid #727689
+        border-radius: 2px
+        float: left
+      .movie-main-info
+        float: left
+        #movie-info-title
+          margin-bottom: 30px
+        #movie-info-synopsis
+          text-align: left
+          margin: 40px 0px 30px 0px
+        #movie-info-score
+          margin-bottom: 30px
+          float: left
+          span
+            float: left
+          #movie-general-score
+            float: left
+        .movie-info-watch-button
+          background: #c73122
+          padding: 10px
+          color: #FFF
+          float: left
+          border: 1px solid #c73122
+          border-radius: 5px 
+          clear: left
+          margin-right: 30px
+          height: 20px
+          cursor: pointer
+          %span
+            float: left
+            line-height: 1.5
+          img
+            float: left
+            margin-right: 5px
+        .movie-info-add-fav
+          float: left
+          background: #c73122
+          padding: 10px
+          color: #FFF
+          border: 1px solid #c73122
+          border-radius: 5px
+          cursor: pointer
+      .movie-secondary-info
+        float: left
+        .movie-info-director-box
+          margin: 25px 0px
+          .movie-director-title
+            text-transform: uppercase
+            text-decoration: underline
+          #movie-general-dir
+        .movie-info-writters-box
+          margin-bottom: 25px
+          .movie-writters-title
+            text-transform: uppercase
+            text-decoration: underline
+          #movie-general-write
+        .movie-info-cast-box
+          margin-bottom: 25px
+          .movie-cast-title
+            text-transform: uppercase
+            text-decoration: underline
+          #movie-general-cast
   .fav_icon
     width: 15px
     height: 15px
@@ -164,6 +279,7 @@ body
     width: 15px
     height: 15px
     cursor: pointer
+    float: left
     img
       float: left
       width: 15px

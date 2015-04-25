@@ -1,29 +1,133 @@
 @import "media-queries"
 @include max-screen(320px)
-@include screen(320px,560px)
-@include screen(520px,768px)
-@include screen(768px,980px)
-@include screen(980px,1024px)
-@include screen(1024px,1285px)
-@include min-screen(1285px)
   body
-    width: 1285px
-    margin: auto
+    width: 100%
+    .master-header
+      margin: 15px 0px 35px 0px
+      width: 100%
+      float: left
+      position: relative
+      #koombea-logo
+        float: left
+        margin-left: 25px
+        a
+          float: left
+          img
+            float: left
+      #koombea-top-nav
+        float: left
+        clear: both
+        margin-left: 25px
+        margin-top: 25px
+        width: 330px
+        li
+          margin-right: 15px
+        .icon-message
+          color: #FFF
+          background: red
+          border-radius: 10px
+          position: absolute
+          padding: 10px
+          max-width: 150px
+          display: none
+          z-index: 10
+        #social-top-banner
+          background: #FFF
+          .share-exp
+            font-size: 14px
+            color: #3f434d
+            width: 100%
+            text-align: center
+            margin-bottom: 10px
+          .social-icon
+            width: 25px
+            height: 25px
+            float: left
+            margin-right: 25px
+            a
+              width: 25px
+              height: 25px
+              float: left
+              img
+                width: 25px
+                height: 25px
+                float: left
+      .user-info
+        float: right
+        margin-right: 15px
+        margin-top: -20px
+        .user-container
+          float: left
+          .user-image
+            float: left
+            margin: -7px 10px 0px 0px
+            cursor: pointer
+            img
+              float: left
+          .username
+            float: left
+            margin-right: 10px
+            cursor: pointer
+            display: none
+          .user-edit
+            float: left
+            cursor: pointer
+            display: none
+            img
+              float: left
+        .user-options
+          display: none
+          position: absolute
+          right: 0
+          background: #FFF
+          width: 100px
+          padding: 15px
+          z-index: 10
+          top: 32px
+          border: 1px solid #A5A7AD
+          .user-opt
+            float: left
+            width: 100%
+            font-size: 14px
+            color: #3f434d
+            a
+              text-transform: uppercase
+              text-align: left
+              text-decoration: none
+              margin-bottom: 5px
+              border-bottom: 1px solid #A5A7AD
+              float: left
+              color: #3f434d
     .master-panel
       .master-overlay
         width: 100%
         height: 100%
       #trailer-pop-up
-        top: 205px
-        .pop-up-title
-          .pop-movie-title
-          .close-pop-up
-        #video-container
-        .similar-movies-container
-          .similar-pop-title 
-          #similar-movies-list
+        #pop-up-box
+          width: 445px
+          top: 205px
+          .pop-up-title
+            .pop-movie-title
+            .close-pop-up
+          #video-container
+          .similar-movies-container
+            .similar-pop-title 
+            #similar-movies-list
+              .similar-movie-box
+                width: 90px
+                font-size: 11px
+                .similar-movie-cover
+                  width: 90px
+                  img
+                    width: 90px
       #banner-container
+        width: 100%
         .banner-image
+          width: 100%
+          height: 405px
+          img
+            width: 100%
+            height: 405px
         .banner-title
           top: 80px
           right: 165px
@@ -62,6 +166,10 @@
                 .movie-likes
                 .movie-download
                 .movie-title
+                .arrow-cont
+                  width: 205px
+                  bottom: -32px
+                  img
               .movie-info-box.clicked-info-box
                 display: block
               .movie-info-box
@@ -88,3 +196,1149 @@
                     .movie-info-cast
               .similar-movies-box
                 display: none
+      #movie-info-overlay
+        width: 768px
+        padding: 40px 0px
+        #cover-image
+          width: 192px
+          height: 290px
+          margin-left: 115px
+          margin-right: 70px 
+          img
+            width: 192px
+            height: 290px
+        .movie-main-info
+          width: 535px
+          margin-right: 40px
+          #movie-info-title
+            font-size: 34px
+          #movie-info-synopsis
+            font-size: 14px
+            width: 535px
+          #movie-info-score
+            #movie-general-score
+          .movie-info-watch-button
+            %span
+          .movie-info-add-fav
+        .movie-secondary-info
+          width: 270px
+          float: left
+          padding: 0px 15px
+          border-left: 1px solid #131417
+          .movie-info-director-box
+            .movie-director-title
+            #movie-general-dir
+          .movie-info-writters-box
+            .movie-writters-title
+            #movie-general-write
+          .movie-info-cast-box
+            .movie-cast-title
+@include screen(320px,520px)
+  body
+    width: 100%
+    .master-header
+      margin: 20px 0px 35px 0px
+      width: 100%
+      float: left
+      position: relative
+      #koombea-logo
+        float: left
+        margin-left: 25px
+        a
+          float: left
+          img
+            float: left
+      #koombea-top-nav
+        float: left
+        clear: both
+        margin-left: 25px
+        margin-top: 25px
+        width: 230px
+        li
+          margin-right: 15px
+        .icon-message
+          color: #FFF
+          background: red
+          border-radius: 10px
+          position: absolute
+          padding: 10px
+          max-width: 150px
+          display: none
+          z-index: 10
+        #social-top-banner
+          background: #FFF
+          .share-exp
+            font-size: 14px
+            color: #3f434d
+            width: 100%
+            text-align: center
+            margin-bottom: 10px
+          .social-icon
+            width: 25px
+            height: 25px
+            float: left
+            margin-right: 25px
+            a
+              width: 25px
+              height: 25px
+              float: left
+              img
+                width: 25px
+                height: 25px
+                float: left
+      .user-info
+        float: right
+        margin-right: 15px
+        margin-top: -20px
+        .user-container
+          float: left
+          .user-image
+            float: left
+            margin: 0px
+            cursor: pointer
+            img
+              float: left
+          .username
+            float: left
+            margin-right: 10px
+            cursor: pointer
+            display: none
+          .user-edit
+            float: left
+            cursor: pointer
+            display: none
+            img
+              float: left
+        .user-options
+          display: none
+          position: absolute
+          right: 0
+          background: #FFF
+          width: 100px
+          padding: 15px
+          z-index: 10
+          top: 32px
+          border: 1px solid #A5A7AD
+          .user-opt
+            float: left
+            width: 100%
+            font-size: 14px
+            color: #3f434d
+            a
+              text-transform: uppercase
+              text-align: left
+              text-decoration: none
+              margin-bottom: 5px
+              border-bottom: 1px solid #A5A7AD
+              float: left
+              color: #3f434d
+    .master-panel
+      .master-overlay
+        width: 100%
+        height: 100%
+      #trailer-pop-up
+        #pop-up-box
+          width: 445px
+          top: 205px
+          .pop-up-title
+            .pop-movie-title
+            .close-pop-up
+          #video-container
+          .similar-movies-container
+            .similar-pop-title 
+            #similar-movies-list
+              .similar-movie-box
+                width: 90px
+                font-size: 11px
+                .similar-movie-cover
+                  width: 90px
+                  img
+                    width: 90px
+      #banner-container
+        width: 100%
+        .banner-image
+          width: 100%
+          height: 405px
+          img
+            width: 100%
+            height: 405px
+        .banner-title
+          top: 80px
+          right: 165px
+          font-size: 54px
+          width: 350px
+        .banner-movie-info
+          .movie-info-field
+            .movie-info-title
+            .movie-info-desc
+            #movie-info-released
+            #movie-info-runtime
+            #movie-info-score
+            #movie-info-likes
+      #movies-container
+        #headline
+          .title
+          #search-box
+            .search-input
+            .search-button
+        #movies-box
+          #movies-list
+            .single-movie-box
+              width: 205px
+              height: 205px
+              .single-movie-overlay
+                width: 205px
+                height: 205px
+                z-index: 10
+              .thumb-movie-cont
+                width: 205px
+                height: 205px
+                .thumb-movie-image
+                  width: 205px
+                  height: 205px
+                  float: left
+                .movie-likes
+                .movie-download
+                .movie-title
+                .arrow-cont
+                  width: 205px
+                  bottom: -32px
+                  img
+              .movie-info-box.clicked-info-box
+                display: block
+              .movie-info-box
+                display: none
+                position: absolute
+                width: 100%
+                background: #31343C
+                .cover-image
+                  img
+                .movie-main-info
+                  .movie-info-title
+                  .movie-info-synopsis
+                  .movie-info-watch-button
+                  .movie-info-add-fav
+                .movie-secondary-info
+                  .movie-info-director-box
+                    .movie-director-title
+                    .movie-info-dir
+                  .movie-info-writters-box
+                    .movie-writters-title
+                    .movie-info-write
+                  .movie-info-cast-box
+                    .movie-cast-title
+                    .movie-info-cast
+              .similar-movies-box
+                display: none
+      #movie-info-overlay
+        width: 768px
+        padding: 40px 0px
+        #cover-image
+          width: 192px
+          height: 290px
+          margin-left: 115px
+          margin-right: 70px 
+          img
+            width: 192px
+            height: 290px
+        .movie-main-info
+          width: 535px
+          margin-right: 40px
+          #movie-info-title
+            font-size: 34px
+          #movie-info-synopsis
+            font-size: 14px
+            width: 535px
+          #movie-info-score
+            #movie-general-score
+          .movie-info-watch-button
+            %span
+          .movie-info-add-fav
+        .movie-secondary-info
+          width: 270px
+          float: left
+          padding: 0px 15px
+          border-left: 1px solid #131417
+          .movie-info-director-box
+            .movie-director-title
+            #movie-general-dir
+          .movie-info-writters-box
+            .movie-writters-title
+            #movie-general-write
+          .movie-info-cast-box
+            .movie-cast-title
+@include screen(520px,768px)
+  body
+    width: 100%
+    .master-header
+      margin: 20px 0px 35px 0px
+      width: 100%
+      float: left
+      position: relative
+      #koombea-logo
+        float: left
+        margin-left: 25px
+        a
+          float: left
+          img
+            float: left
+      #koombea-top-nav
+        float: left
+        clear: both
+        margin-left: 25px
+        margin-top: 25px
+        width: 330px
+        li
+          margin-right: 15px
+        .icon-message
+          color: #FFF
+          background: red
+          border-radius: 10px
+          position: absolute
+          padding: 10px
+          max-width: 150px
+          display: none
+          z-index: 10
+        #social-top-banner
+          background: #FFF
+          .share-exp
+            font-size: 14px
+            color: #3f434d
+            width: 100%
+            text-align: center
+            margin-bottom: 10px
+          .social-icon
+            width: 25px
+            height: 25px
+            float: left
+            margin-right: 25px
+            a
+              width: 25px
+              height: 25px
+              float: left
+              img
+                width: 25px
+                height: 25px
+                float: left
+      .user-info
+        float: right
+        margin-right: 45px
+        .user-container
+          float: left
+          .user-image
+            float: left
+            margin: -7px 10px 0px 0px
+            cursor: pointer
+            img
+              float: left
+          .username
+            float: left
+            margin-right: 10px
+            cursor: pointer
+            display: none
+          .user-edit
+            float: left
+            cursor: pointer
+            img
+              float: left
+        .user-options
+          display: none
+          position: absolute
+          right: 0
+          background: #FFF
+          width: 200px
+          padding: 15px
+          z-index: 10
+          top: 32px
+          border: 1px solid #A5A7AD
+          .user-opt
+            float: left
+            width: 100%
+            font-size: 14px
+            color: #3f434d
+            a
+              text-transform: uppercase
+              text-align: left
+              text-decoration: none
+              margin-bottom: 5px
+              border-bottom: 1px solid #A5A7AD
+              float: left
+              color: #3f434d
+    .master-panel
+      .master-overlay
+        width: 100%
+        height: 100%
+      #trailer-pop-up
+        #pop-up-box
+          width: 445px
+          top: 205px
+          .pop-up-title
+            .pop-movie-title
+            .close-pop-up
+          #video-container
+          .similar-movies-container
+            .similar-pop-title 
+            #similar-movies-list
+              .similar-movie-box
+                width: 90px
+                font-size: 11px
+                .similar-movie-cover
+                  width: 90px
+                  img
+                    width: 90px
+      #banner-container
+        width: 100%
+        .banner-image
+          width: 100%
+          height: 405px
+          img
+            width: 100%
+            height: 405px
+        .banner-title
+          top: 80px
+          right: 165px
+          font-size: 54px
+          width: 350px
+        .banner-movie-info
+          .movie-info-field
+            .movie-info-title
+            .movie-info-desc
+            #movie-info-released
+            #movie-info-runtime
+            #movie-info-score
+            #movie-info-likes
+      #movies-container
+        #headline
+          .title
+          #search-box
+            .search-input
+            .search-button
+        #movies-box
+          #movies-list
+            .single-movie-box
+              width: 205px
+              height: 205px
+              .single-movie-overlay
+                width: 205px
+                height: 205px
+                z-index: 10
+              .thumb-movie-cont
+                width: 205px
+                height: 205px
+                .thumb-movie-image
+                  width: 205px
+                  height: 205px
+                  float: left
+                .movie-likes
+                .movie-download
+                .movie-title
+                .arrow-cont
+                  width: 205px
+                  bottom: -32px
+                  img
+              .movie-info-box.clicked-info-box
+                display: block
+              .movie-info-box
+                display: none
+                position: absolute
+                width: 100%
+                background: #31343C
+                .cover-image
+                  img
+                .movie-main-info
+                  .movie-info-title
+                  .movie-info-synopsis
+                  .movie-info-watch-button
+                  .movie-info-add-fav
+                .movie-secondary-info
+                  .movie-info-director-box
+                    .movie-director-title
+                    .movie-info-dir
+                  .movie-info-writters-box
+                    .movie-writters-title
+                    .movie-info-write
+                  .movie-info-cast-box
+                    .movie-cast-title
+                    .movie-info-cast
+              .similar-movies-box
+                display: none
+      #movie-info-overlay
+        width: 768px
+        padding: 40px 0px
+        #cover-image
+          width: 192px
+          height: 290px
+          margin-left: 115px
+          margin-right: 70px 
+          img
+            width: 192px
+            height: 290px
+        .movie-main-info
+          width: 535px
+          margin-right: 40px
+          #movie-info-title
+            font-size: 34px
+          #movie-info-synopsis
+            font-size: 14px
+            width: 535px
+          #movie-info-score
+            #movie-general-score
+          .movie-info-watch-button
+            %span
+          .movie-info-add-fav
+        .movie-secondary-info
+          width: 270px
+          float: left
+          padding: 0px 15px
+          border-left: 1px solid #131417
+          .movie-info-director-box
+            .movie-director-title
+            #movie-general-dir
+          .movie-info-writters-box
+            .movie-writters-title
+            #movie-general-write
+          .movie-info-cast-box
+            .movie-cast-title
+@include screen(768px,980px)
+  body
+    width: 100%
+    .master-header
+      margin: 35px 0px 35px 0px
+      width: 100%
+      float: left
+      position: relative
+      #koombea-logo
+        float: left
+        margin-left: 25px
+        a
+          float: left
+          img
+            float: left
+      #koombea-top-nav
+        margin-left: auto
+        margin-right: auto
+        width: 230px
+        li
+          margin-right: 15px
+        .icon-message
+          color: #FFF
+          background: red
+          border-radius: 10px
+          position: absolute
+          padding: 10px
+          max-width: 150px
+          display: none
+          z-index: 10
+        #social-top-banner
+          background: #FFF
+          .share-exp
+            font-size: 14px
+            color: #3f434d
+            width: 100%
+            text-align: center
+            margin-bottom: 10px
+          .social-icon
+            width: 25px
+            height: 25px
+            float: left
+            margin-right: 25px
+            a
+              width: 25px
+              height: 25px
+              float: left
+              img
+                width: 25px
+                height: 25px
+                float: left
+      .user-info
+        float: right
+        margin-right: 45px
+        .user-container
+          float: left
+          .user-image
+            float: left
+            margin: -7px 10px 0px 0px
+            cursor: pointer
+            img
+              float: left
+          .username
+            float: left
+            margin-right: 10px
+            cursor: pointer
+          .user-edit
+            float: left
+            cursor: pointer
+            img
+              float: left
+        .user-options
+          display: none
+          position: absolute
+          right: 0
+          background: #FFF
+          width: 200px
+          padding: 15px
+          z-index: 10
+          top: 32px
+          border: 1px solid #A5A7AD
+          .user-opt
+            float: left
+            width: 100%
+            font-size: 14px
+            color: #3f434d
+            a
+              text-transform: uppercase
+              text-align: left
+              text-decoration: none
+              margin-bottom: 5px
+              border-bottom: 1px solid #A5A7AD
+              float: left
+              color: #3f434d
+    .master-panel
+      .master-overlay
+        width: 100%
+        height: 100%
+      #trailer-pop-up
+        #pop-up-box
+          width: 720px
+          top: 205px
+          .pop-up-title
+            .pop-movie-title
+            .close-pop-up
+          #video-container
+          .similar-movies-container
+            .similar-pop-title 
+            #similar-movies-list
+              .similar-movie-box
+                width: 90px
+                font-size: 11px
+                .similar-movie-cover
+                  width: 90px
+                  img
+                    width: 90px
+      #banner-container
+        width: 100%
+        .banner-image
+          width: 100%
+          height: 405px
+          img
+            width: 100%
+            height: 405px
+        .banner-title
+          top: 80px
+          right: 165px
+          font-size: 54px
+          width: 350px
+        .banner-movie-info
+          .movie-info-field
+            .movie-info-title
+            .movie-info-desc
+            #movie-info-released
+            #movie-info-runtime
+            #movie-info-score
+            #movie-info-likes
+      #movies-container
+        #headline
+          .title
+          #search-box
+            .search-input
+            .search-button
+        #movies-box
+          #movies-list
+            .single-movie-box
+              width: 205px
+              height: 205px
+              .single-movie-overlay
+                width: 205px
+                height: 205px
+                z-index: 10
+              .thumb-movie-cont
+                width: 205px
+                height: 205px
+                .thumb-movie-image
+                  width: 205px
+                  height: 205px
+                  float: left
+                .movie-likes
+                .movie-download
+                .movie-title
+                .arrow-cont
+                  width: 205px
+                  bottom: -32px
+                  img
+              .movie-info-box.clicked-info-box
+                display: block
+              .movie-info-box
+                display: none
+                position: absolute
+                width: 100%
+                background: #31343C
+                .cover-image
+                  img
+                .movie-main-info
+                  .movie-info-title
+                  .movie-info-synopsis
+                  .movie-info-watch-button
+                  .movie-info-add-fav
+                .movie-secondary-info
+                  .movie-info-director-box
+                    .movie-director-title
+                    .movie-info-dir
+                  .movie-info-writters-box
+                    .movie-writters-title
+                    .movie-info-write
+                  .movie-info-cast-box
+                    .movie-cast-title
+                    .movie-info-cast
+              .similar-movies-box
+                display: none
+      #movie-info-overlay
+        width: 768px
+        padding: 40px 0px
+        #cover-image
+          width: 192px
+          height: 290px
+          margin-left: 115px
+          margin-right: 70px 
+          img
+            width: 192px
+            height: 290px
+        .movie-main-info
+          width: 535px
+          margin-right: 40px
+          #movie-info-title
+            font-size: 34px
+          #movie-info-synopsis
+            font-size: 14px
+            width: 535px
+          #movie-info-score
+            #movie-general-score
+          .movie-info-watch-button
+            %span
+          .movie-info-add-fav
+        .movie-secondary-info
+          width: 270px
+          float: left
+          padding: 0px 15px
+          border-left: 1px solid #131417
+          .movie-info-director-box
+            .movie-director-title
+            #movie-general-dir
+          .movie-info-writters-box
+            .movie-writters-title
+            #movie-general-write
+          .movie-info-cast-box
+            .movie-cast-title
+@include screen(980px,1024px)
+  body
+    width: 980px
+    margin: auto
+    .master-panel
+      .master-overlay
+        width: 100%
+        height: 100%
+      #trailer-pop-up
+        #pop-up-box
+          width: 945px
+          top: 205px
+          .pop-up-title
+            .pop-movie-title
+            .close-pop-up
+          #video-container
+          .similar-movies-container
+            .similar-pop-title 
+            #similar-movies-list
+              .similar-movie-box
+                width: 90px
+                font-size: 11px
+                .similar-movie-cover
+                  width: 90px
+                  img
+                    width: 90px
+      #banner-container
+        .banner-image
+          width: 980px
+          height: 550px
+          img
+            width: 980px
+            height: 550px
+        .banner-title
+          top: 80px
+          right: 165px
+          font-size: 54px
+          width: 350px
+        .banner-movie-info
+          .movie-info-field
+            .movie-info-title
+            .movie-info-desc
+            #movie-info-released
+            #movie-info-runtime
+            #movie-info-score
+            #movie-info-likes
+      #movies-container
+        #headline
+          .title
+          #search-box
+            .search-input
+            .search-button
+        #movies-box
+          #movies-list
+            .single-movie-box
+              width: 205px
+              height: 205px
+              .single-movie-overlay
+                width: 205px
+                height: 205px
+                z-index: 10
+              .thumb-movie-cont
+                width: 205px
+                height: 205px
+                .thumb-movie-image
+                  width: 205px
+                  height: 205px
+                  float: left
+                .movie-likes
+                .movie-download
+                .movie-title
+                .arrow-cont
+                  width: 205px
+                  bottom: -32px
+                  img
+              .movie-info-box.clicked-info-box
+                display: block
+              .movie-info-box
+                display: none
+                position: absolute
+                width: 100%
+                background: #31343C
+                .cover-image
+                  img
+                .movie-main-info
+                  .movie-info-title
+                  .movie-info-synopsis
+                  .movie-info-watch-button
+                  .movie-info-add-fav
+                .movie-secondary-info
+                  .movie-info-director-box
+                    .movie-director-title
+                    .movie-info-dir
+                  .movie-info-writters-box
+                    .movie-writters-title
+                    .movie-info-write
+                  .movie-info-cast-box
+                    .movie-cast-title
+                    .movie-info-cast
+              .similar-movies-box
+                display: none
+      #movie-info-overlay
+        width: 980px
+        padding: 40px 0px
+        #cover-image
+          width: 192px
+          height: 290px
+          margin-left: 115px
+          margin-right: 70px 
+          img
+            width: 192px
+            height: 290px
+        .movie-main-info
+          width: 535px
+          margin-right: 40px
+          #movie-info-title
+            font-size: 34px
+          #movie-info-synopsis
+            font-size: 14px
+            width: 535px
+          #movie-info-score
+            #movie-general-score
+          .movie-info-watch-button
+            %span
+          .movie-info-add-fav
+        .movie-secondary-info
+          width: 270px
+          float: left
+          padding: 0px 15px
+          border-left: 1px solid #131417
+          .movie-info-director-box
+            .movie-director-title
+            #movie-general-dir
+          .movie-info-writters-box
+            .movie-writters-title
+            #movie-general-write
+          .movie-info-cast-box
+            .movie-cast-title
+@include screen(1024px,1285px)
+  body
+    width: 1024px
+    margin: auto
+    .master-panel
+      .master-overlay
+        width: 100%
+        height: 100%
+      #trailer-pop-up
+        #pop-up-box
+          width: 945px
+          top: 205px
+          .pop-up-title
+            .pop-movie-title
+            .close-pop-up
+          #video-container
+          .similar-movies-container
+            .similar-pop-title 
+            #similar-movies-list
+              .similar-movie-box
+                width: 90px
+                font-size: 11px
+                .similar-movie-cover
+                  width: 90px
+                  img
+                    width: 90px
+      #banner-container
+        .banner-image
+          width: 1024px
+          height: 550px
+          img
+            width: 1024px
+            height: 550px
+        .banner-title
+          top: 80px
+          right: 165px
+          font-size: 54px
+          width: 350px
+        .banner-movie-info
+          .movie-info-field
+            .movie-info-title
+            .movie-info-desc
+            #movie-info-released
+            #movie-info-runtime
+            #movie-info-score
+            #movie-info-likes
+      #movies-container
+        #headline
+          .title
+          #search-box
+            .search-input
+            .search-button
+        #movies-box
+          #movies-list
+            .single-movie-box
+              width: 205px
+              height: 205px
+              .single-movie-overlay
+                width: 205px
+                height: 205px
+                z-index: 10
+              .thumb-movie-cont
+                width: 205px
+                height: 205px
+                .thumb-movie-image
+                  width: 205px
+                  height: 205px
+                  float: left
+                .movie-likes
+                .movie-download
+                .movie-title
+                .arrow-cont
+                  width: 205px
+                  bottom: -32px
+                  img
+              .movie-info-box.clicked-info-box
+                display: block
+              .movie-info-box
+                display: none
+                position: absolute
+                width: 100%
+                background: #31343C
+                .cover-image
+                  img
+                .movie-main-info
+                  .movie-info-title
+                  .movie-info-synopsis
+                  .movie-info-watch-button
+                  .movie-info-add-fav
+                .movie-secondary-info
+                  .movie-info-director-box
+                    .movie-director-title
+                    .movie-info-dir
+                  .movie-info-writters-box
+                    .movie-writters-title
+                    .movie-info-write
+                  .movie-info-cast-box
+                    .movie-cast-title
+                    .movie-info-cast
+              .similar-movies-box
+                display: none
+      #movie-info-overlay
+        width: 1024px
+        padding: 40px 0px
+        #cover-image
+          width: 192px
+          height: 290px
+          margin-left: 115px
+          margin-right: 70px 
+          img
+            width: 192px
+            height: 290px
+        .movie-main-info
+          width: 535px
+          margin-right: 40px
+          #movie-info-title
+            font-size: 34px
+          #movie-info-synopsis
+            font-size: 14px
+            width: 535px
+          #movie-info-score
+            #movie-general-score
+          .movie-info-watch-button
+            %span
+          .movie-info-add-fav
+        .movie-secondary-info
+          width: 270px
+          float: left
+          padding: 0px 15px
+          border-left: 1px solid #131417
+          .movie-info-director-box
+            .movie-director-title
+            #movie-general-dir
+          .movie-info-writters-box
+            .movie-writters-title
+            #movie-general-write
+          .movie-info-cast-box
+            .movie-cast-title
+@include min-screen(1285px)
+  body
+    width: 1285px
+    margin: auto
+    .master-panel
+      .master-overlay
+        width: 100%
+        height: 100%
+      #trailer-pop-up
+        #pop-up-box
+          width: 945px
+          top: 205px
+          .pop-up-title
+            .pop-movie-title
+            .close-pop-up
+          #video-container
+          .similar-movies-container
+            .similar-pop-title 
+            #similar-movies-list
+              .similar-movie-box
+                width: 90px
+                font-size: 11px
+                .similar-movie-cover
+                  width: 90px
+                  img
+                    width: 90px
+      #banner-container
+        .banner-image
+          width: 1285px
+          height: 550px
+          img
+            width: 1285px
+            height: 550px
+        .banner-title
+          top: 80px
+          right: 165px
+          font-size: 54px
+          width: 350px
+        .banner-movie-info
+          .movie-info-field
+            .movie-info-title
+            .movie-info-desc
+            #movie-info-released
+            #movie-info-runtime
+            #movie-info-score
+            #movie-info-likes
+      #movies-container
+        #headline
+          .title
+          #search-box
+            .search-input
+            .search-button
+        #movies-box
+          #movies-list
+            .single-movie-box
+              width: 205px
+              height: 205px
+              .single-movie-overlay
+                width: 205px
+                height: 205px
+                z-index: 10
+              .thumb-movie-cont
+                width: 205px
+                height: 205px
+                .thumb-movie-image
+                  width: 205px
+                  height: 205px
+                  float: left
+                .movie-likes
+                .movie-download
+                .movie-title
+                .arrow-cont
+                  width: 205px
+                  bottom: -32px
+                  img
+              .movie-info-box.clicked-info-box
+                display: block
+              .movie-info-box
+                display: none
+                position: absolute
+                width: 100%
+                background: #31343C
+                .cover-image
+                  img
+                .movie-main-info
+                  .movie-info-title
+                  .movie-info-synopsis
+                  .movie-info-watch-button
+                  .movie-info-add-fav
+                .movie-secondary-info
+                  .movie-info-director-box
+                    .movie-director-title
+                    .movie-info-dir
+                  .movie-info-writters-box
+                    .movie-writters-title
+                    .movie-info-write
+                  .movie-info-cast-box
+                    .movie-cast-title
+                    .movie-info-cast
+              .similar-movies-box
+                display: none
+      #movie-info-overlay
+        width: 1285px
+        padding: 40px 0px
+        #cover-image
+          width: 192px
+          height: 290px
+          margin-left: 115px
+          margin-right: 70px 
+          img
+            width: 192px
+            height: 290px
+        .movie-main-info
+          width: 535px
+          margin-right: 40px
+          #movie-info-title
+            font-size: 34px
+          #movie-info-synopsis
+            font-size: 14px
+            width: 535px
+          #movie-info-score
+            #movie-general-score
+          .movie-info-watch-button
+            %span
+          .movie-info-add-fav
+        .movie-secondary-info
+          width: 270px
+          float: left
+          padding: 0px 15px
+          border-left: 1px solid #131417
+          .movie-info-director-box
+            .movie-director-title
+            #movie-general-dir
+          .movie-info-writters-box
+            .movie-writters-title
+            #movie-general-write
+          .movie-info-cast-box
+            .movie-cast-title

@@ -1,13 +1,14 @@
 .master-overlay
 #trailer-pop-up
-  .pop-up-title
-    .pop-movie-title
-    .close-pop-up X
-  #video-container
-    %iframe{:width=>"945",:height=>"365",:src=>""}
-  .similar-movies-container
-    .similar-pop-title Similar Movies
-    #similar-movies-list
+  #pop-up-box
+    .pop-up-title
+      .pop-movie-title
+      .close-pop-up X
+    #video-container
+      %iframe{:width=>"945",:height=>"365",:src=>""}
+    .similar-movies-container
+      .similar-pop-title Similar Movies
+      #similar-movies-list
 #banner-container
   .banner-image
   .banner-title
@@ -31,3 +32,25 @@
       .search-input=text_field_tag :search, "",:placeholder=>"Search..."
       .search-button=image_tag "icons_logos/search_icon.jpg"
   #movies-box
+#movie-info-overlay
+  #cover-image
+  .movie-main-info
+    #movie-info-title
+    #movie-info-synopsis
+    #movie-info-score
+      %span Score
+      %span#movie-general-score
+    .movie-info-watch-button
+      =image_tag "icons_logos/watch_info_icon.jpg"
+      %span Watch trailer
+    .movie-info-add-fav Add to favorites
+  .movie-secondary-info
+    .movie-info-director-box
+      .movie-director-title.movie-secondary-title Director
+      #movie-general-dir
+    .movie-info-writters-box
+      .movie-writters-title.movie-secondary-title Writters
+      #movie-general-write
+    .movie-info-cast-box
+      .movie-cast-title.movie-secondary-title Stars
+      #movie-general-cast
